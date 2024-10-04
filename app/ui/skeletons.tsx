@@ -1,6 +1,6 @@
 // Loading animation
 const shimmer =
-  'before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/60 before:to-transparent';
+  "before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/60 before:to-transparent";
 
 export function CardSkeleton() {
   return (
@@ -143,27 +143,27 @@ export function TableRowCustomerSkeleton() {
   return (
     <tr className="w-full border-b border-gray-100 last-of-type:border-none [&:first-child>td:first-child]:rounded-tl-lg [&:first-child>td:last-child]:rounded-tr-lg [&:last-child>td:first-child]:rounded-bl-lg [&:last-child>td:last-child]:rounded-br-lg">
       {/* Customer Name and Image */}
-      <td className="relative overflow-hidden whitespace-nowrap py-3 pl-6 pr-3">
+      <td className="relative overflow-hidden whitespace-nowrap py-4 pl-4 pr-3 text-sm">
         <div className="flex items-center gap-3">
           <div className="h-8 w-8 rounded-full bg-gray-100"></div>
           <div className="h-6 w-24 rounded bg-gray-100"></div>
         </div>
       </td>
       {/* Email */}
-      <td className="whitespace-nowrap px-3 py-3">
-        <div className="h-6 w-32 rounded bg-gray-100"></div>
+      <td className="whitespace-nowrap px-4 py-5">
+        <div className="h-7 w-32 rounded bg-gray-100"></div>
       </td>
       {/* Amount */}
-      <td className="whitespace-nowrap px-3 py-3">
-        <div className="h-6 w-16 rounded bg-gray-100"></div>
+      <td className="whitespace-nowrap px-4 py-5">
+        <div className="h-7 w-16 rounded bg-gray-100"></div>
       </td>
       {/* Date */}
-      <td className="whitespace-nowrap px-3 py-3">
-        <div className="h-6 w-16 rounded bg-gray-100"></div>
+      <td className="whitespace-nowrap px-4 py-5">
+        <div className="h-7 w-16 rounded bg-gray-100"></div>
       </td>
       {/* Status */}
-      <td className="whitespace-nowrap px-3 py-3">
-        <div className="h-6 w-16 rounded bg-gray-100"></div>
+      <td className="whitespace-nowrap px-4 py-5">
+        <div className="h-7 w-16 rounded bg-gray-100"></div>
       </td>
     </tr>
   );
@@ -260,16 +260,16 @@ export function CustomerTableSkeleton() {
           <table className="hidden min-w-full text-gray-900 md:table">
             <thead className="rounded-md bg-gray-50 text-left text-sm font-normal">
               <tr>
-                <th scope="col" className="px-4 py-5 font-medium sm:pl-6">
+                <th scope="col" className="px-4 py-4 font-medium sm:pl-6">
                   Name
                 </th>
-                <th scope="col" className="px-3 py-5 font-medium">
+                <th scope="col" className="px-4 py-5 font-medium">
                   Email
                 </th>
-                <th scope="col" className="px-3 py-5 font-medium">
+                <th scope="col" className="px-4 py-5 font-medium">
                   Total Invoices
                 </th>
-                <th scope="col" className="px-3 py-5 font-medium">
+                <th scope="col" className="px-4 py-5 font-medium">
                   Total Pending
                 </th>
                 <th scope="col" className="px-4 py-5 font-medium">
@@ -283,6 +283,7 @@ export function CustomerTableSkeleton() {
               <TableRowCustomerSkeleton />
               <TableRowCustomerSkeleton />
               <TableRowCustomerSkeleton />
+              <TableRowCustomerSkeleton />
             </tbody>
           </table>
         </div>
@@ -290,4 +291,3 @@ export function CustomerTableSkeleton() {
     </div>
   );
 }
-
